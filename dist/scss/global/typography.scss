@@ -1,0 +1,39 @@
+@use "../util/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.p-design {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 0rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--h);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p,
+.p-design {
+    font-size: 12px;
+    color: var(--p);
+    font-weight: 300;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
