@@ -3,7 +3,7 @@ const weeklyBtn = document.getElementById("weekly-btn");
 const monthlyBtn = document.getElementById("monthly-btn");
 
 async function populate() {
-    const requestURL = "../../data.json";
+    const requestURL = "./data.json";
     const response = await fetch(requestURL);
     const data = await response.json();
 
