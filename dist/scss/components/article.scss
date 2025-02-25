@@ -25,13 +25,14 @@ body {
 
         @include breakpoint(laptop){ //desktop design
             max-width: pxToRem(1100); // Set maximum width for desktop
-            @include grid-columns(3, 20px); // Create a 3 column grid with 20px gap
+            @include grid-columns(4, 20px); // Create a 3 column grid with 20px gap
             justify-items: center; // Center items horizontally
+            height: pxToRem(515);
     
             .profile-container {
                 height: 100%;
                 grid-column: span 1; // Span 1 column
-                grid-row: span 3; // Span 3 rows
+                grid-row: span 2; // Span 3 rows
             }
         }
     }

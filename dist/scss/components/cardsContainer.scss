@@ -11,6 +11,16 @@ article {
         //desktop design
         @include  breakpoint(laptop){ 
             width: pxToRem(250);
+            height: pxToRem(240);
+            .container{
+                height:pxToRem(200);
+                .downer{
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    height: 100%;
+                }
+            }
 
         }
     }
@@ -47,7 +57,7 @@ article {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
             padding: 0 10px;
             width: 100%;
             height: 100%;

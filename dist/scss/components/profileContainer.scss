@@ -55,15 +55,25 @@
     }
     // add desktop design
     @include breakpoint(laptop) {
-        height: pxToRem(615);
+        height: pxToRem(515);
         width: pxToRem(250);
         .profile {
             height: pxToRem(335);
             flex-direction: column;
             align-items: flex-start;
+
+            img{
+                margin-left: pxToRem(20);
+
+            }
             h1{
+                margin-left: pxToRem(20);
                 font-size: 36px;
                 font-weight: 400;
+            }
+            p{
+                margin-left: pxToRem(20);
+                font-size: 20px;
             }
         }
 
