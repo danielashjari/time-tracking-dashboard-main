@@ -4,7 +4,7 @@ article {
 
     .wrapper{
         height: pxToRem(160);
-        max-width: pxToRem(325);
+        min-width: pxToRem(325);
         position: relative;
         overflow: hidden;
         border-radius: pxToRem(10);
@@ -36,6 +36,7 @@ article {
         bottom: 0;
         z-index: 2;
         top: 40px;
+        padding: pxToRem(10);
 
         .upper, .downer{
             display: flex;
@@ -49,7 +50,7 @@ article {
 
         .time{
             color: var(--h);
-            font-size: 48px;
+            font-size: 36px;
             font-family: "Rubik", serif;;
         }
 
