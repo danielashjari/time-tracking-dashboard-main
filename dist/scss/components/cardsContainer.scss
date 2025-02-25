@@ -8,6 +8,11 @@ article {
         position: relative;
         overflow: hidden;
         border-radius: pxToRem(10);
+        //desktop design
+        @include  breakpoint(laptop){ 
+            width: pxToRem(250);
+
+        }
     }
     .banner {
         position: absolute;

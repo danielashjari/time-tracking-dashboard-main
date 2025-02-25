@@ -105,6 +105,31 @@ body article {
   width: 100%;
   margin: 0 auto;
 }
+@media (min-width: 40em) {
+  body article {
+    max-width: 43.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  body article .profile-container {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 64em) {
+  body article {
+    max-width: 68.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  body article .profile-container {
+    height: 100%;
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+}
 
 .profile-container {
   height: 12.5rem;
@@ -159,6 +184,31 @@ body article {
 .profile-container .btn-box button:hover {
   color: var(--p-active);
 }
+@media (min-width: 64em) {
+  .profile-container {
+    height: 38.4375rem;
+    width: 15.625rem;
+  }
+  .profile-container .profile {
+    height: 20.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-container .profile h1 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .profile-container .btn-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    bottom: 30px;
+  }
+  .profile-container .btn-box button {
+    margin-left: 1.25rem;
+    font-size: 20px;
+  }
+}
 
 article .wrapper {
   height: 10rem;
@@ -166,6 +216,11 @@ article .wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 0.625rem;
+}
+@media (min-width: 64em) {
+  article .wrapper {
+    width: 15.625rem;
+  }
 }
 article .banner {
   position: absolute;

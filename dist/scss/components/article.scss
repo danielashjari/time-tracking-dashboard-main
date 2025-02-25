@@ -9,9 +9,30 @@ body {
     article {
         @include flex(column, center);
         gap: pxToRem(20);
-        min-width: pxToRem(300); // Set minimum width
-        max-width: pxToRem(335); // Set maximum width
+        min-width: pxToRem(300); 
+        max-width: pxToRem(335); 
         width: 100%; // Ensure the article takes the full width within the min and max constraints
         margin: 0 auto; // Center horizontally
+    
+        @include breakpoint(tablet){ //tablet design
+            max-width: pxToRem(700); // Set maximum width for tablet
+            @include grid-columns(2, 20px); // Create a 2 column grid with 20px gap
+            .profile-container {
+                grid-column: span 2; // Span 2 columns
+            }
+
+        }
+
+        @include breakpoint(laptop){ //desktop design
+            max-width: pxToRem(1100); // Set maximum width for desktop
+            @include grid-columns(3, 20px); // Create a 3 column grid with 20px gap
+            justify-items: center; // Center items horizontally
+    
+            .profile-container {
+                height: 100%;
+                grid-column: span 1; // Span 1 column
+                grid-row: span 3; // Span 3 rows
+            }
+        }
     }
 }
