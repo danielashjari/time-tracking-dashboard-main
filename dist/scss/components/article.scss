@@ -3,6 +3,7 @@
 body {
     background-color: var(--bg);
     article {
-        @include grid-columns(1 , 20px);
+        @include flex(column, center);
+        gap: pxToRem(20);
     }
 }
