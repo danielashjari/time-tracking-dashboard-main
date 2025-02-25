@@ -1,0 +1,56 @@
+@use "../util/" as *;
+
+.profile-container {
+    height: pxToRem(200);
+    width: 100%;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    border-radius: pxToRem(10);
+    background-color: var(--card-bg);
+    padding: pxToRem(20);
+
+    .profile {
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+        height: pxToRem(130);
+        width: 100%;
+        background-color: var(--profile);
+        border-radius: pxToRem(10);
+        @include flex(row, center);
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+
+        img {
+            width: pxToRem(70);
+            height: pxToRem(70);
+            border-style: solid;
+            border-color: white;
+            border-radius: 50%;
+        }
+    }
+
+    .btn-box {
+        bottom: 25px;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        background-color: var(--card-bg);
+        @include flex(row, center);
+        justify-content: space-around;
+
+        button{
+            border: none;
+            background-color: var(--card-bg);
+            color: var(--p-deactive);
+
+            &:hover {
+                color: var(--p-active);
+            }
+        }
+    }
+}

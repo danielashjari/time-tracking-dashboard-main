@@ -2,8 +2,16 @@
 
 body {
     background-color: var(--bg);
+    @include flex(column, center);
+    justify-content: center; // Center horizontally
+    margin: 20px 10px; 
+
     article {
         @include flex(column, center);
         gap: pxToRem(20);
+        min-width: pxToRem(300); // Set minimum width
+        max-width: pxToRem(335); // Set maximum width
+        width: 100%; // Ensure the article takes the full width within the min and max constraints
+        margin: 0 auto; // Center horizontally
     }
 }

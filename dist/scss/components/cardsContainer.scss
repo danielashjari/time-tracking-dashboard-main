@@ -4,7 +4,7 @@ article {
 
     .wrapper{
         height: pxToRem(160);
-        min-width: pxToRem(325);
+        width: 100%;
         position: relative;
         overflow: hidden;
         border-radius: pxToRem(10);
