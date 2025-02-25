@@ -124,6 +124,7 @@ body article {
     gap: 20px;
     justify-items: center;
     height: 32.1875rem;
+    margin-top: 15vh;
   }
   body article .profile-container {
     height: 100%;
@@ -239,6 +240,10 @@ article .wrapper {
     justify-content: space-around;
     align-items: flex-start;
     height: 100%;
+  }
+  article .wrapper .container .downer .time {
+    font-size: 72px;
+    font-weight: 300;
   }
 }
 article .banner {
