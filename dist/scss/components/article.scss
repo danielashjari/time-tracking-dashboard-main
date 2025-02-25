@@ -28,6 +28,7 @@ body {
             @include grid-columns(4, 20px); // Create a 3 column grid with 20px gap
             justify-items: center; // Center items horizontally
             height: pxToRem(515);
+            margin-top: 15vh;
     
             .profile-container {
                 height: 100%;
