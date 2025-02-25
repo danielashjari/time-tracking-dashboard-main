@@ -251,10 +251,11 @@ article .banner {
   z-index: 1;
 }
 article .banner img {
-  left: 90%;
-  top: 50%;
-  height: 40px;
-  width: 40px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 60px;
+  width: 60px;
 }
 article .container {
   background-color: var(--card-bg);
