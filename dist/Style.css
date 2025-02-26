@@ -279,8 +279,10 @@ article .container {
 }
 article .container:hover {
   background-color: var(--card-bg-hover);
+  transition-duration: 0.3s;
 }
-article .container .upper, article .container .downer {
+article .container .upper,
+article .container .downer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -288,6 +290,12 @@ article .container .upper, article .container .downer {
   padding: 0 10px;
   width: 100%;
   height: 100%;
+}
+article .container .svg-object {
+  opacity: 0.5;
+}
+article .container .svg-object:hover {
+  opacity: 1;
 }
 article .container .time {
   color: var(--h);
