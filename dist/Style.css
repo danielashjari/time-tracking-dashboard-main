@@ -35,6 +35,7 @@ html {
   --p:white;
   --p-active:hsl(236, 100%, 87%);
   --p-deactive:hsl(235, 45%, 61%);
+  --card-bg-hover:hsl(236, 41%, 34%);
   --bg:hsl(226, 43%, 10%);
   --card-bg:hsl(235, 46%, 20%);
 }
@@ -275,6 +276,9 @@ article .container {
   z-index: 2;
   top: 2.5rem;
   padding: 0.625rem;
+}
+article .container:hover {
+  background-color: var(--card-bg-hover);
 }
 article .container .upper, article .container .downer {
   display: flex;
